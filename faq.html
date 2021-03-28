@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+	<meta charset="utf-8">
+	<title>How to get Started</title>
+
+</head>
+	<link rel="stylesheet" href="css/style.css" />
+<body>
+<div class="topnav">
+  <a href="index.html">Home</a>
+  <a href="how to get started.html">How to Get Started</a>
+  <a href="inspiration.html">Inspiration</a>
+  <a href="faq.html">FAQ</a>
+  <a href="On Music.html">On Music</a>
+</div>
+
+	<img src="images/piano keys.jpg" 
+	alt="Keys of a Piano"
+	width= "1500px"
+	height= "600px">
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.accordion {
+	padding: 18px;
+	width: 100%;
+	border: none;
+	text-align: left;
+	font-size: 24px;
+	transition: 0.4s;
+	background-color: #b05461	
+}
+
+.active, .accordion:hover {
+  background-color: #b05461; 
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: #d69190;
+  overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<h2>Common Questions</h2>
+
+<button class="accordion">Am I Too Old To Start?</button>
+<div class="panel">
+  <p>The fun thing about music, is it's a hobby that can last a lifetime. Some people are afraid that they may have missed the mark, and started too late. I've found that it doesn't matter the age of a the musician - but the passion matters far more. If someone has a drive to learn an instrument in retirement and puts in the time and effort, they can learn some great things, and have an awesome time doing it!</p>
+</div>
+
+<button class="accordion">Pain While Playing</button>
+<div class="panel">
+  <p>There's a big difference between a bit of soreness when fretting on a guitar, or stretching for a piano chord and actual pain - but it's important to pay attention that the soreness doesn't turn into actual pain. If you feel pain, don't continue to play until you consult with a doctor. If you're too sore to make it through a practice session, come reinvigorated after a rest day or two!</p>
+</div>
+
+<button class="accordion">Why Does This Song Sound So Different?</button>
+<div class="panel">
+  <p>Learning to play along with music or other players is very important part of musical growth. It is also the part that might discourage some people the most. Trying to get 'That Sound' is a concept that can lead people down long and expensive rabbit holes, or big time sinks. Professionals make their entire living based on their own sound and style. Don't get too caught up in trying to sound like someone else, and spend some more time trying to develop you're own flair. </p>
+</div>
+
+<button class="accordion">How Do I Improve?</button>
+<div class="panel">
+  <p>Coming to terms that the learning process is long and difficult is the first step to improving. Self diagnosis is helpful and important, but proper tutelage can limit mistakes that become second nature. It's a lot easier to learn with someone correcting mistakes early, then developing bad habbits and working through them later. Setting aside a good amount of weekly time to practice is the most important thing. </p>
+</div>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+</script>
+
+</body>
+</html>
